@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- Metadados existentes -->
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="navbar">
+    <nav aria-label="Navegação principal">
+      <ul class="menu">
+        <li><a href="/about/about-me.html" class="menu-item">Sobre</a></li>
+        <li><a href="#work" class="menu-item">Trabalhos</a></li>
+        <li><a href="#contact" class="menu-item">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="about-page">
+    <!-- Hero Section Alternativo -->
+    <section class="about-hero">
+      <div class="desktop-frame">
+        <div class="screen-content">
+          <img src="imgs/WhatsApp Image 2025-03-27 at 23.58.12.jpeg" alt="Foto do meu setup de trabalho" class="desktop-photo">
+          <!-- Miniatura flutuante -->
+          <div class="floating-miniature">
+            <img src="imgs/WhatsApp Image 2025-03-27 at 23.59.56.jpeg" alt="Eu programando com meu gato" class="personal-photo">
+            <div class="miniature-border"></div>
+          </div>
+          <!-- Mockup de janelas -->
+          <div class="window-mockup">
+            <div class="window-bar">
+              <div class="window-controls">
+                <span class="window-btn close"></span>
+                <span class="window-btn minimize"></span>
+              </div>
+              <span class="window-title">terminal_julia</span>
+            </div>
+            <div class="window-content">
+              <pre><code class="language-javascript">const minhaRotina = () => {
+  while(coffee) {
+    code();
+    playWithCat();
+  }
+};</code></pre>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-frame-base"></div>
+      </div>
+      <div class="hero-caption">
+        <h2 class="hero-quote">"Transformo <span class="gradient-text">café</span> em código<br>e <span class="gradient-text">ideias</span> em experiências"</h2>
+        <div class="hero-scroll-hint">
+          <span>Scroll down</span>
+          <svg class="scroll-arrow" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Timeline Interativa -->
+    <section class="interactive-timeline">
+      <h2 class="section-title">Minha <span class="gradient-text">Linha do Tempo</span></h2>
+
+      <div class="timeline-container">
+        <div class="timeline-bar"></div>
+
+        <div class="timeline-item" data-year="2019">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Primeiro "Hello World"</h3>
+            <p>Meu primeiro trabalho na área foi um Jovem Aprendiz como desenvolvedora iOS Mobile, onde conheci a base da área.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-year="2020">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Desenvolvedora Front-End Júnior</h3>
+            <p>Atuei 3 anos como desenvolvedora júnior em uma agência de ecommerce onde trabalhava com a flataforma VTEX. Desenvolvia sites para grandes nomes do mercado digital.</p>
+          </div>
+        </div>
+
+        <!-- Outros itens da timeline -->
+      </div>
+    </section>
+
+    <!-- Seção Skills Gráfica -->
+    <section class="skills-section">
+      <h2 class="section-title">Minhas <span class="gradient-text">Habilidades</span></h2>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Front-end</h3>
+          <div class="skill-level" data-level="90"></div>
+          <ul class="skill-tags">
+            <li>React</li>
+            <li>Vue</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Back-end</h3>
+          <div class="skill-level" data-level="70"></div>
+          <ul class="skill-tags">
+            <li>Node.js</li>
+            <li>Python</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Projeto Social Redesign -->
+    <section class="social-impact">
+      <div class="impact-content">
+        <h2 class="section-title">Impacto <span class="gradient-text">Social</span></h2>
+        <div class="impact-stats">
+          <div class="stat-item">
+            <div class="stat-number" data-count="200">0</div>
+            <div class="stat-label">Mulheres capacitadas</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-count="15">0</div>
+            <div class="stat-label">Workshops ministrados</div>
+          </div>
+        </div>
+        <p class="impact-text">Trabalho como voluntária na ONG Corali que promove diversidade e inclusão nas áreas STEAM. Trabalho desde a organização e execução dos projetos, como ministrante de workshops</p>
+      </div>
+      <div class="impact-image">
+        <img src="imgs/projeto-social.jpg" alt="Projeto social" loading="lazy">
+        <div class="image-overlay"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-neon">
+    <div class="footer-content">
+      <p class="footer-text">Feito com <span class="pulse">❤️</span> por Júlia Sena</p>
+    </div>
+
+    <div class="copyright">
+      <p>© 2025 | Código e design por mim</p>
+    </div>
+  </footer>
+
+  <script src="js/about-animations.js"></script>
+</body>
+
+</html>

@@ -20,7 +20,7 @@
   <header class="navbar">
     <nav aria-label="Navegação principal">
       <ul class="menu">
-        <li><a href="#about" class="menu-item">Sobre</a></li>
+        <li><a href="/about/about-me.html" class="menu-item">Sobre</a></li>
         <li><a href="#work" class="menu-item">Trabalhos</a></li>
         <li><a href="#contact" class="menu-item">Contato</a></li>
       </ul>
@@ -40,13 +40,13 @@
       <img class="icone-seta" src="imgs/seta-para-baixo.png" onclick="scrollParaConteudo()" aria-hidden="true" />
     </section>
 
-    <section id="about" class="reveal">
+    <section id="about" class="reveal-left">
       <h2 class="title-about title-primary">Confissões de uma dev viciada em café e pixels perfeitos</h2>
       <p class="text-about">Como front-end developer e futura cientista de dados, meu superpoder é transformar complexidade em interfaces intuitivas e acessíveis. Se até minha avó usaria, missão cumprida. Fora do código? Participo de uma ONG que leva tecnologia a <strong>comunidades subrepresentadas</strong>, porque inovação só faz sentido quando gera impacto. Quer saber como transformo café em código e ideias em impacto?</p>
-      <button class="btn-ver-mais btn-primary" aria-label="Saiba mais sobre minha trajetória">Vem conhecer minha jornada</button>
+      <button class="btn-ver-mais btn-primary" aria-label="Saiba mais sobre minha trajetória" onclick="window.location.href='about-me.html'">Vem conhecer minha jornada</button>
     </section>
 
-    <section class="carrossel-wrapper">
+    <section class="carrossel-wrapper reveal-right">
       <h2 class="title-stacks title-primary">Minha caixa de ferramentas </h2>
       <div class="carrossel-stacks">
         <div class="carrossel-content">
@@ -69,7 +69,7 @@
       </div>
     </section>
 
-    <section id="work">
+    <section id="work" class="reveal-left">
       <h2 class="title-works title-primary">Últimos Trabalhos</h2>
       <article class="article-job reveal-left">
         <div class="description-img-job">
@@ -109,7 +109,7 @@
       </article>
     </section>
 
-    <section class="contact-cta" id="contact">
+    <section class="contact-cta reveal" id="contact">
       <div class="contact-gradient">
         <h3 class="cta-title title-primary">Vamos criar algo extraordinário juntos?</h3>
         <p class="cta-subtitle">Como sua parceira de front-end, garanto:código limpo, prazos cumpridos e soluções que encantam usuários</p>

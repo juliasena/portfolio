@@ -13,16 +13,18 @@ ScrollReveal().reveal(".reveal", {
   reset: true,
 });
 
-ScrollReveal().reveal(".reveal-left", {
-  origin: "left",
-  distance: "100px",
-  duration: 1000,
-});
-ScrollReveal().reveal(".reveal-right", {
-  origin: "right",
-  distance: "100px",
-  duration: 1000,
-});
+// ScrollReveal().reveal(".reveal-left", {
+//   origin: "left",
+//   distance: "100px",
+//   duration: 1000,
+//   reset: true,
+// });
+// ScrollReveal().reveal(".reveal-right", {
+//   origin: "right",
+//   distance: "100px",
+//   duration: 1000,
+//   reset: true,
+// });
 
 particlesJS.load("particles-js", "js/particlesjs-config.json", function () {});
 
