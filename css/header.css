@@ -1,0 +1,52 @@
+.navbar {
+  width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(16, 4, 37, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(93, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.navbar.scrolled {
+  background-color: rgba(16, 4, 37, 0.95);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.menu-item {
+  color: #fafafa;
+  text-decoration: none;
+  padding: 0 15px;
+  transition: color 0.3s ease-in-out;
+  font-family: "Inter", sans-serif;
+}
+
+.menu-item:hover {
+  color: #d8d8d8;
+}
+
+.menu-item.active {
+  color: #5dffff;
+  position: relative;
+}
+
+.menu-item.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 15px;
+  width: calc(100% - 30px);
+  height: 2px;
+  background: linear-gradient(90deg, #5dffff, #ae0ca7);
+}

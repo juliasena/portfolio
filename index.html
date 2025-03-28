@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Júlia Sena</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/work-cards.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap">
+  <!-- segunda fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar">
+    <nav aria-label="Navegação principal">
+      <ul class="menu">
+        <li><a href="#about" class="menu-item">Sobre</a></li>
+        <li><a href="#work" class="menu-item">Trabalhos</a></li>
+        <li><a href="#contact" class="menu-item">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="particles-js"></div>
+    <section class="hero">
+      <img class="banner-principal" src="imgs/fundo-versao1.png" alt="Imagem de fundo do portfólio com tons modernos">
+      <div class="container-subtitle">
+        <h1 class="name-banner">Olá, eu sou a Júlia</h1>
+        <h2 class="cargo-banner title-primary"> <span id="animated-text"></span></h2>
+        <p class="call-to-action">Traduzo códigos em emoções digitais</p>
+        <a href="https://wa.me/48996387027" target="_blank" class="btn-animado btn-primary">Vamos criar algo extraordinário →</a>
+      </div>
+      <img class="icone-seta" src="imgs/seta-para-baixo.png" onclick="scrollParaConteudo()" aria-hidden="true" />
+    </section>
+
+    <section id="about" class="reveal">
+      <h2 class="title-about title-primary">Confissões de uma dev viciada em café e pixels perfeitos</h2>
+      <p class="text-about">Como front-end developer e futura cientista de dados, meu superpoder é transformar complexidade em interfaces intuitivas e acessíveis. Se até minha avó usaria, missão cumprida. Fora do código? Participo de uma ONG que leva tecnologia a <strong>comunidades subrepresentadas</strong>, porque inovação só faz sentido quando gera impacto. Quer saber como transformo café em código e ideias em impacto?</p>
+      <button class="btn-ver-mais btn-primary" aria-label="Saiba mais sobre minha trajetória">Vem conhecer minha jornada</button>
+    </section>
+
+    <section class="carrossel-wrapper">
+      <h2 class="title-stacks title-primary">Minha caixa de ferramentas </h2>
+      <div class="carrossel-stacks">
+        <div class="carrossel-content">
+          <figure class="img-stack">
+            <img src="imgs/logo-html.png" alt="Logotipo HTML5" loading="lazy">
+          </figure>
+          <figure class="img-stack">
+            <img src="imgs/css-logo.png" alt="Logotipo CSS3" loading="lazy">
+          </figure>
+          <figure class="img-stack">
+            <img src="imgs/logo-js.png" alt="Logotipo JavaScript" loading="lazy">
+          </figure>
+          <figure class="img-stack">
+            <img src="imgs/logo-react.png" alt="Logotipo React.js" loading="lazy">
+          </figure>
+          <figure class="img-stack">
+            <img src="imgs/logo-sass.png" alt="Logotipo Sass" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2 class="title-works title-primary">Últimos Trabalhos</h2>
+      <article class="article-job reveal-left">
+        <div class="description-img-job">
+          <img class="img-projetinho" src="imgs/foto-codigo.png" alt="Prévia do Projeto 1" loading="lazy">
+          <h3 class="title-project">Projeto 1</h3>
+          <p class="description-job">
+            Descrição do projeto aqui. Explicação sobre a tecnologia utilizada e propósito do projeto.
+          </p>
+          <div class="legenda-stack">
+            <span class="js-color primary-caption">JavaScript</span>
+            <span class="css-color primary-caption">CSS</span>
+          </div>
+          <div class="buttons">
+            <button class="btn-ver-projeto">Ver projeto</button>
+            <a href="https://github.com/seu-repositorio" target="_blank" class="btn-ver-github" aria-label="Ver código no GitHub">
+              <img src="imgs/icon-github.png" alt="" loading="lazy">
+            </a>
+          </div>
+        </div>
+        <div class="description-img-job">
+          <img class="img-projetinho" src="imgs/foto-codigo.png" alt="Prévia do Projeto 1" loading="lazy">
+          <h3 class="title-project">Projeto 2</h3>
+          <p class="description-job">
+            Descrição do projeto aqui. Explicação sobre a tecnologia utilizada e propósito do projeto.
+          </p>
+          <div class="legenda-stack">
+            <span class="js-color primary-caption">JavaScript</span>
+            <span class="css-color primary-caption">CSS</span>
+          </div>
+          <div class="buttons">
+            <button class="btn-ver-projeto">Ver projeto</button>
+            <a href="https://github.com/seu-repositorio" target="_blank" class="btn-ver-github" aria-label="Ver código no GitHub">
+              <img src="imgs/icon-github.png" alt="" loading="lazy">
+            </a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="contact-cta" id="contact">
+      <div class="contact-gradient">
+        <h3 class="cta-title title-primary">Vamos criar algo extraordinário juntos?</h3>
+        <p class="cta-subtitle">Como sua parceira de front-end, garanto:código limpo, prazos cumpridos e soluções que encantam usuários</p>
+
+        <div class="contact-methods">
+          <a href="mailto:juliasena19@gmail.com" class="contact-email">
+            <img src="imgs/mail.png" alt="Ícone de e-mail" loading="lazy">
+            juliasena19@gmail.com
+          </a>
+
+          <a href="https://wa.me/48996387027" target="_blank" class="contact-whatsapp">
+            <img src="imgs/whatsapp.png" alt="Ícone do WhatsApp" loading="lazy">
+            Envie uma mensagem
+          </a>
+
+          <a href="https://linkedin.com/in/julia-sena" target="_blank" class="contact-linkedin">
+            <img src="imgs/icon-linkedin.png" alt="Ícone do LinkedIn" loading="lazy">
+            Conecte-se no LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-neon">
+    <div class="footer-content">
+      <p class="footer-text">Feito com <span class="pulse">❤️</span> por Júlia Sena</p>
+    </div>
+
+    <div class="copyright">
+      <p>© 2025 | Código e design por mim</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+  <script src="js/configs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+.article-job {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.description-img-job {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  background: radial-gradient(
+    90.16% 143.01% at 15.32% 21.04%,
+    rgba(220, 0, 211, 0.12) 0%,
+    rgba(93, 255, 255, 0.066) 77.08%,
+    rgba(18, 180, 180, 0) 100%
+  );
+  backdrop-filter: blur(40px);
+  max-width: 500px;
+  padding: 20px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transform-style: preserve-3d;
+}
+.description-img-job:hover {
+  transform: perspective(1000px) rotateY(10deg) translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+.description-img-job::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(93, 255, 255, 0.1),
+    rgba(174, 12, 167, 0.1)
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: -1;
+}
+
+.description-img-job:hover::before {
+  opacity: 1;
+}
+.img-projetinho {
+  width: 450px;
+  height: 300px;
+}
+.title-project {
+  font-size: 25px;
+  font-weight: 600;
+  color: #fafafa;
+  margin: 20px 0;
+}
+.title-works {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.description-job {
+  font-size: 18px;
+  font-weight: 300;
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+/* legenda stack*/
+.legenda-stack {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.js-color {
+  background-color: rgba(46, 196, 182, 0.15);
+  border: 1px solid rgba(46, 196, 182, 0.4);
+  color: #2ec4b6;
+}
+.css-color {
+  background-color: rgba(255, 159, 28, 0.1);
+  border: 1px solid rgba(255, 159, 28, 0.25);
+  color: #ff9f1c;
+}
+.primary-caption {
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 300;
+}
+.btn-ver-projeto {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 10px;
+  color: #fafafa;
+  font-weight: 300;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn-ver-github {
+  background-color: transparent;
+  border: none;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
