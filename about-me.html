@@ -3,15 +3,23 @@
 
 <head>
   <!-- Metadados existentes -->
-  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&display=swap">
+  <!-- segunda fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="navbar">
     <nav aria-label="Navegação principal">
       <ul class="menu">
-        <li><a href="/about/about-me.html" class="menu-item">Sobre</a></li>
+        <li><a href="/" class="menu-item">Home</a></li>
         <li><a href="#work" class="menu-item">Trabalhos</a></li>
         <li><a href="#contact" class="menu-item">Contato</a></li>
       </ul>
@@ -19,120 +27,123 @@
   </header>
 
   <main class="about-page">
-    <!-- Hero Section Alternativo -->
-    <section class="about-hero">
-      <div class="desktop-frame">
-        <div class="screen-content">
-          <img src="imgs/WhatsApp Image 2025-03-27 at 23.58.12.jpeg" alt="Foto do meu setup de trabalho" class="desktop-photo">
-          <!-- Miniatura flutuante -->
-          <div class="floating-miniature">
-            <img src="imgs/WhatsApp Image 2025-03-27 at 23.59.56.jpeg" alt="Eu programando com meu gato" class="personal-photo">
-            <div class="miniature-border"></div>
-          </div>
-          <!-- Mockup de janelas -->
-          <div class="window-mockup">
-            <div class="window-bar">
-              <div class="window-controls">
-                <span class="window-btn close"></span>
-                <span class="window-btn minimize"></span>
-              </div>
-              <span class="window-title">terminal_julia</span>
-            </div>
-            <div class="window-content">
-              <pre><code class="language-javascript">const minhaRotina = () => {
-  while(coffee) {
-    code();
-    playWithCat();
-  }
-};</code></pre>
-            </div>
-          </div>
+    <div id="particles-js"></div>
+    <section class="personal-hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="hero-subtitle">“ Ninguém é tão pequeno que não possa fazer a diferença, e ninguém é tão grande que possa fazer isso sozinho ” Greta Thunberg</p>
         </div>
-        <div class="desktop-frame-base"></div>
-      </div>
-      <div class="hero-caption">
-        <h2 class="hero-quote">"Transformo <span class="gradient-text">café</span> em código<br>e <span class="gradient-text">ideias</span> em experiências"</h2>
-        <div class="hero-scroll-hint">
-          <span>Scroll down</span>
-          <svg class="scroll-arrow" width="24" height="24" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-          </svg>
+
+        <div class="hero-images">
+          <div class="main-photo-frame">
+            <img src="imgs/WhatsApp Image 2025-03-27 at 23.59.56.jpeg" alt="Júlia programando com seu gato" class="main-photo">
+          </div>
+
+          <div class="secondary-photos">
+            <img src="imgs/WhatsApp Image 2025-03-27 at 23.58.12.jpeg" alt="Júlia tomando café enquanto programa" class="small-photo photo-1">
+            <img src="imgs/WhatsApp Image 2025-03-28 at 00.49.27.jpeg" alt="Júlia ministrando workshop" class="small-photo photo-2">
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Seção Timeline Interativa -->
-    <section class="interactive-timeline">
-      <h2 class="section-title">Minha <span class="gradient-text">Linha do Tempo</span></h2>
+    <!-- Minha História - Timeline Narrativa -->
+    <section class="my-story">
+      <h2 class="section-title title-primary">Minha jornada até aqui</h2>
 
-      <div class="timeline-container">
-        <div class="timeline-bar"></div>
-
-        <div class="timeline-item" data-year="2019">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Primeiro "Hello World"</h3>
-            <p>Meu primeiro trabalho na área foi um Jovem Aprendiz como desenvolvedora iOS Mobile, onde conheci a base da área.</p>
+      <div class="story-container">
+        <div class="story-chapter">
+          <div class="chapter-marker">
+            <span class="chapter-year">2019 - 2020</span>
+            <div class="chapter-icon">👩‍💻</div>
+          </div>
+          <div class="chapter-content">
+            <h3>O primeiro "Hello, World!"</h3>
+            <p>Meu primeiro contato com programação foi como Jovem Aprendiz desenvolvendo na linguagem Swift para mobile iOS.</p>
+            <div class="chapter-memory">
+              <span class="memory-icon">📱</span>
+              <span class="memory-text">Empresa: Arctouch</span>
+            </div>
           </div>
         </div>
 
-        <div class="timeline-item" data-year="2020">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <h3>Desenvolvedora Front-End Júnior</h3>
-            <p>Atuei 3 anos como desenvolvedora júnior em uma agência de ecommerce onde trabalhava com a flataforma VTEX. Desenvolvia sites para grandes nomes do mercado digital.</p>
+        <div class="story-chapter">
+          <div class="chapter-marker">
+            <span class="chapter-year">2020</span>
+            <div class="chapter-icon">🚀</div>
+          </div>
+          <div class="chapter-content">
+            <h3>Front-End Júnior</h3>
+            <p>Iniciei minha carreira como estagiária em desenvolvimento web e, após um período de aprendizado intenso, fui promovida a Desenvolvedora Front-End Júnior. Nesta posição, atuei na criação e manutenção de e-commerces de alto desempenho para grandes players do mercado digital, utilizando a plataforma VTEX (uma das principais soluções de e-commerce do mercado). </p>
+            <div class="chapter-memory">
+              <span class="memory-icon">🖥️</span>
+              <span class="memory-text">Empresa: Avanti agência de e-commerce</span>
+            </div>
           </div>
         </div>
-
-        <!-- Outros itens da timeline -->
       </div>
     </section>
 
-    <!-- Seção Skills Gráfica -->
-    <section class="skills-section">
-      <h2 class="section-title">Minhas <span class="gradient-text">Habilidades</span></h2>
-
-      <div class="skills-grid">
-        <div class="skill-category">
-          <h3>Front-end</h3>
-          <div class="skill-level" data-level="90"></div>
-          <ul class="skill-tags">
+    <!-- Habilidades e Paixões -->
+    <section class="skills-passions">
+      <h2 class="section-title title-primary">O que eu faço e amo</h2>
+      <div class="skills-passions-grid">
+        <div class="skill-card">
+          <div class="skill-header">
+            <h3>Tecnologias</h3>
+            <div class="skill-icon">💻</div>
+          </div>
+          <ul class="skill-list">
             <li>React</li>
-            <li>Vue</li>
+            <li>Python - <span class="skill-comment">(estudando e desenvolvendo habilidades)</span></li>
             <li>JavaScript</li>
+            <li>Node.js - <span class="skill-comment">(conhecimento prévio em back-end)</span></li>
           </ul>
         </div>
 
-        <div class="skill-category">
-          <h3>Back-end</h3>
-          <div class="skill-level" data-level="70"></div>
-          <ul class="skill-tags">
-            <li>Node.js</li>
-            <li>Python</li>
+        <div class="passion-card">
+          <div class="passion-header">
+            <h3>Além do código</h3>
+            <div class="passion-icon">❤️</div>
+          </div>
+          <ul class="passion-list">
+            <li>Promover mais mulheres para as áreas STEAM</li>
+            <li>Meus gatos <span class="passion-detail">(cada um com sua personalidade)</span></li>
+            <li>Cafézinho superfaturado <span class="passion-detail">(quem não ama?)</span></li>
+            <li>MPB</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Seção Projeto Social Redesign -->
-    <section class="social-impact">
-      <div class="impact-content">
-        <h2 class="section-title">Impacto <span class="gradient-text">Social</span></h2>
-        <div class="impact-stats">
-          <div class="stat-item">
-            <div class="stat-number" data-count="200">0</div>
-            <div class="stat-label">Mulheres capacitadas</div>
+    <!-- Impacto Social - Versão Pessoal -->
+    <section class="social-mission">
+      <div class="mission-content">
+        <h2 class="section-title title-primary">Minha Missão</h2>
+        <div class="container-mission">
+          <p class="mission-text">Conheci a programação por meio de um programa gratuito, indicado por uma professora durante minha adolescência. Hoje, entendo que iniciativas como essa abrem portas para futuros que muitas jovens sequer imaginam ser possíveis.<br /><br />
+            É por isso que me dedico a projetos que democratizam o acesso à tecnologia. Acredito que, através da educação e da representatividade, podemos construir maior equidade nas áreas STEAM – ainda tão marcadas pela desigualdade de gênero.</p>
+
+          <div class="mission-highlight">
+            <p>"A educação é a arma mais poderosa que você pode usar para mudar o mundo." Nelson Mandela</p>
           </div>
-          <div class="stat-item">
-            <div class="stat-number" data-count="15">0</div>
-            <div class="stat-label">Workshops ministrados</div>
+
+          <div class="mission-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-count="200">200</div>
+              <div class="stat-label"> + Mulheres impactadas</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-count="10">10</div>
+              <div class="stat-label">Workshops</div>
+            </div>
           </div>
         </div>
-        <p class="impact-text">Trabalho como voluntária na ONG Corali que promove diversidade e inclusão nas áreas STEAM. Trabalho desde a organização e execução dos projetos, como ministrante de workshops</p>
       </div>
-      <div class="impact-image">
-        <img src="imgs/projeto-social.jpg" alt="Projeto social" loading="lazy">
-        <div class="image-overlay"></div>
+
+      <div class="mission-photo">
+        <img src="imgs/foto-technovation.jpg" alt="Júlia ministrando workshop" loading="lazy">
+        <div class="photo-caption">Technovation Girls Florianópolis - 2024</div>
       </div>
     </section>
   </main>
@@ -147,7 +158,12 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
   <script src="js/about-animations.js"></script>
+  <script src="js/about-particles.js"></script>
 </body>
 
 </html>

@@ -26,7 +26,9 @@ ScrollReveal().reveal(".reveal", {
 //   reset: true,
 // });
 
-particlesJS.load("particles-js", "js/particlesjs-config.json", function () {});
+particlesJS.load("particles-js", "js/particlesjs-config.json", function () {
+  console.log("Particles configurado");
+});
 
 function scrollParaConteudo() {
   window.scrollTo({
