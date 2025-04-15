@@ -50,3 +50,18 @@
   height: 2px;
   background: linear-gradient(90deg, #5dffff, #ae0ca7);
 }
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .menu {
+    gap: 8px;
+  }
+
+  .menu-item {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}

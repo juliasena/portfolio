@@ -45,6 +45,7 @@ body {
   position: relative;
   height: 700px;
   overflow: hidden;
+  max-width: 100%;
 }
 
 .banner-principal {
@@ -204,12 +205,13 @@ body {
 
 /* Carrossel de Stacks */
 .carrossel-wrapper {
-  width: 100%;
+  max-width: 100%;
   margin: 100px 0;
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .title-stacks {
   margin-bottom: 20px;
@@ -351,7 +353,7 @@ body {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
-  color: #fafafa;
+  color: black;
   background: #9d4edd;
   border: none;
   border-radius: 25px;
@@ -396,4 +398,128 @@ body {
 .btn-primary:hover::before {
   top: 100%;
   left: 100%;
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 1200px) {
+  .name-banner {
+    font-size: 70px;
+  }
+
+  .title-primary {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: 600px;
+  }
+
+  .container-subtitle {
+    left: 5%;
+  }
+
+  .article-job {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 15px;
+  }
+
+  .description-img-job {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .name-banner {
+    font-size: 50px;
+  }
+
+  .cargo-banner {
+    font-size: 24px;
+  }
+
+  .call-to-action {
+    font-size: 16px;
+  }
+
+  .carrossel-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .img-projetinho {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  .menu {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 500px;
+  }
+
+  .name-banner {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .title-primary {
+    font-size: 25px;
+  }
+
+  .container-subtitle {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-methods a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .text-about {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .name-banner {
+    font-size: 30px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu-item {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .img-stack {
+    width: 50px;
+    height: 50px;
+  }
+
+  .carrossel-content img {
+    height: 25px;
+  }
 }

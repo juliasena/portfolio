@@ -49,3 +49,27 @@ statNumbers.forEach((number) => {
     }
   }, 16);
 });
+
+// No seu arquivo about-animations.js
+function handleMobileLayout() {
+  const isMobile = window.innerWidth < 768;
+  const heroContent = document.querySelector(".hero-content");
+  const storyChapters = document.querySelectorAll(".story-chapter");
+
+  if (isMobile) {
+    // Ajustes específicos para mobile
+    heroContent.classList.add("mobile-mode");
+    storyChapters.forEach((chapter) => {
+      chapter.classList.add("mobile-mode");
+    });
+  } else {
+    heroContent.classList.remove("mobile-mode");
+    storyChapters.forEach((chapter) => {
+      chapter.classList.remove("mobile-mode");
+    });
+  }
+}
+
+// Inicializa e observa mudanças de tamanho
+window.addEventListener("load", handleMobileLayout);
+window.addEventListener("resize", handleMobileLayout);

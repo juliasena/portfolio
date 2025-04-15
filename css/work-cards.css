@@ -106,3 +106,19 @@
   justify-content: flex-end;
   gap: 8px;
 }
+
+@media (max-width: 768px) {
+  .article-job {
+    flex-direction: column;
+  }
+
+  .description-img-job {
+    width: 100%;
+    max-width: none;
+  }
+
+  .img-projetinho {
+    width: 100%;
+    height: auto;
+  }
+}

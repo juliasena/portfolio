@@ -77,3 +77,17 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("scrolled");
   }
 });
+
+// No seu arquivo configs.js ou script existente
+function handleMobileMenu() {
+  const navbar = document.querySelector(".navbar");
+  if (window.innerWidth < 768) {
+    navbar.classList.add("mobile-mode");
+  } else {
+    navbar.classList.remove("mobile-mode");
+  }
+}
+
+// Inicializa e observa mudanças de tamanho
+window.addEventListener("load", handleMobileMenu);
+window.addEventListener("resize", handleMobileMenu);
